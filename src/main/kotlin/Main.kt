@@ -10,9 +10,9 @@ fun main(args: Array<String>) {
     // last full moon date
     val lastfull: LocalDate = LocalDate.of(2023,8,30)
     var daysfromlast = abs(today.until(lastfull, ChronoUnit.DAYS))
-    println(daysfromlast)
+//    println(daysfromlast)
     var daystonextfull = 30-daysfromlast
-    println(daystonextfull)
+//    println(daystonextfull)
     // formatting everything
     var nextfull = today.plusDays(daystonextfull)
     var nextfullformatted = nextfull.format(formatter)
